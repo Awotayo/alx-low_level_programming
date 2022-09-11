@@ -5,27 +5,21 @@
  */
 int main(void)
 {
-	int n, k, d, p;
+	int n, k;
 
-	for (n  = 0; n <= 9; n++)
+	for (n  = 0; n <= 98; n++)
 	{
-		for (k = 0; k <= 8; k++)
+		for (k = n + 1; k <= 99; k++)
 		{
-			for (d = n + 1; d <= 9; d++)
-			{
-				for (p = n + 1; p <= 9; p++)
-				{
-					putchar((n % 10) + '0');
-					putchar((k % 10) + '0');
-					putchar(',');
-					putchar((d % 10) + '0');
-					putchar((p % 10) + '0');
-					if (n == 9 && k == 8 && d == 9 && p == 9)
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar((n % 10) + '0');
+			putchar((n % 10) + '0');
+			putchar(' ');
+			putchar((k % 10) + '0');
+			putchar((k % 10) + '0');
+			if (n == 98 && k == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');

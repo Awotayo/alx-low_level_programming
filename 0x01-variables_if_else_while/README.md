@@ -8,4 +8,5 @@ a program that prints the lowercase alphabet in reverse
 a program that prints all the numbers of base 16 in lowercase
 a program that prints all possible combinations of single-digit numbers
 a program that prints all possible different combinations of three digits
-a program that prints all possible combinations of two two-digit numbers.
+a program that prints all possible combinations of two two-digit numbers
+.
