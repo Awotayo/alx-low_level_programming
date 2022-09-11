@@ -7,13 +7,13 @@ int main(void)
 {
 	int n, k;
 
-	for (n = 0; n <= 8; n++)
+	for (n = 0; n < 9; n++)
 	{
-		for (k = 1; k <= 9; k++)
+		for (k = n + 1; k < 10; k++)
 		{
 			putchar((n % 10) + '0');
 			putchar((k % 10) + '0');
-			if (n == 8 && n == 9)
+			if (n == 8 && k == 9)
 				continue;
 			putchar(',');
 			putchar(' ');
