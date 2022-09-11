@@ -9,9 +9,9 @@ int main(void)
 
 	for (n = 0; n <= 7; n++)
 	{
-		for (k = 1; k <= 8; k++)
+		for (k = n + 1; k <= 8; k++)
 		{
-			for (d = 2; d <= 9; d++)
+			for (d = k + 1; d <= 9; d++)
 			{
 				putchar((n % 10) + '0');
 				putchar((k % 10) + '0');
