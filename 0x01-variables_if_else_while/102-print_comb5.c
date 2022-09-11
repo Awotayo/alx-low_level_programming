@@ -11,13 +11,14 @@ int main(void)
 	{
 		for (k = n + 1; k <= 99; k++)
 		{
-			putchar((n % 10) + '0');
+			putchar((n / 10) + '0');
 			putchar((n % 10) + '0');
 			putchar(' ');
-			putchar((k % 10) + '0');
+			putchar((k / 10) + '0');
 			putchar((k % 10) + '0');
 			if (n == 98 && k == 99)
 				continue;
+
 			putchar(',');
 			putchar(' ');
 		}
